@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+.전체 {
+    background-color: #E49393;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+
+.전체 .자식1 {
+    width: 25%;
+    background-color: #FED049;
+    float: left;
+}
+
+.전체 .자식2 {
+    width: 25%;
+    background-color: #CFFDE1;
+    float: left;
+}
+
+.전체 .자식3 {
+    width: 25%;
+    background-color: #379237;
+    float: left;
+}
+
+.전체 .자식4 {
+    color: aliceblue;
+    width: 25%;
+    background-color: #3D5656;
+    float: left;
+}
+
+.전체 .막내 {
+    background-color: red;
+    clear: left;
+}
+/* "float: left"=왼쪽으로 붙이면서 정렬 */
+
+.floor {
+    background-color: #7FBCD2;
+    padding: 20px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.floor .baby {
+    width: 32%;
+    background-color: #B2A4FF;
+    float: left;
+    margin-right: 2%;
+}
+.floor .baby3 {
+    margin-right: 0%;
+}
+.floor .baby4 {
+    clear: left;
+}

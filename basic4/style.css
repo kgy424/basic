@@ -1,0 +1,10 @@
+div{background-color: #ebb6b6;}
+.인라인{background-color: #95baff;width: 300px;height: 300px;}
+
+button{width: 50px; height: 30px;}
+img{width: 250px;height: 250px;}
+
+/* 
+*style.css에서 버튼이나 이미지를 바로 불러서 크기 지정 가능
+* 타이틀 아래(7밑)에 link만들어서 href에 style.css로 파일 연결 
+*/
