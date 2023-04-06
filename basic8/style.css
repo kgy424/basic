@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+/* after는 인라인 요소이다 */
+.clear::after{content: ""; clear: both; display: block;}
+
+.father{
+    background-color: lightslategray;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.father .child{
+    background-color: lightgoldenrodyellow;
+    width: 33.3333%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+
+.pal{
+    margin-top: 30px;
+}
+
+.pal .child8{
+    width: 45%;
+    background-color: blanchedalmond;
+    float: left;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.pal .child1{
+    margin-right: 10%;
+}

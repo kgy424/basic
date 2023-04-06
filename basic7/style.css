@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dad .goodbaby {
+    clear: both;
+}
+
+/* 나눠쓰는공통부문 */
+
+.dad {
+    width: 1000px;
+    background-color: #ff9b58;
+    border: 1px solid blue;
+
+    /*
+    패딩에 값이 들어가는 순서는 시계방향
+    padding: 상 오 왼 하; 
+     */
+    padding: 10px 20px 30px 40px;
+
+    /*
+     padding: 상10px 좌우20px 하30px 40px; 
+     */
+    padding: 10px 20px 30px;
+
+    /* 
+    padding: 상하 좌우  
+    */
+    padding: 10px 20px;
+
+    /* 
+    padding: 상하좌우  
+    */
+    padding: 20px;
+
+    /* 같은 명령이 여러 번 나오면 가장 마지막 명령만 출력 됨. */
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px auto 0;
+
+}
+
+.mike.dad .baby {
+    background-color: #d7b2d8;
+    width: 32%;
+    margin-right: 2%;
+    height: 100px;
+    float: left;
+}
+
+.mike.dad .baby3 {
+    margin-right: 0;
+}
+
+.steve .baby {
+    background-color: #58ffa6;
+    width: 23.5%;
+    margin-right: 2%;
+    height: 100px;
+    float: left;
+    
+}
+
+.steve .baby2{
+    overflow: hidden;
+}
+.steve .baby2 video{
+    width: 100%;
+}
+
+.steve .baby3{
+    overflow: hidden;
+}
+.steve .baby3 img{
+    width: 100%;
+}
+
+.steve .baby4 {
+    margin-right: 0%;
+    overflow: hidden;
+} 
+
+.steve .baby4 object{
+    width: 100%;
+}
