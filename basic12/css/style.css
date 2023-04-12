@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cure::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.wholeworld {
+    /* 높이는 자식을 따라가고 넓이는 부모를 따라감
+    wholeworld 넓이는 부모인 body를 따르고
+    wholeworld의 높이는 자식인 illdong을 따른다 */
+    border: 5px solid red;
+    padding: 20px;
+}
+
+.Illdong {
+    /* illdong의 넓이는 부모인 wholeworld를 따르고
+    illdong의 높이는 자식인 텍스트 illdong의 높이를 따른다.  */
+    border: 5px solid blue;
+}
+
+.Edong {
+    border: 5px solid green;
+    width: 300px;
+    margin: 0 auto;
+    /* 상하좌우순으로 마진이 들어감 */
+}
+
+.Samdong {
+    border: 5px solid orange;
+    margin-top: 30px;
+}
+
+.Samdong .SAMB {
+    background-color: #ffd994;
+    width: 33.3333%;
+    float: left;
+}
+
+.Samdong .yak {
+    clear: both;
+}
+
+.Sadong {
+    border: 5px solid ffd900;
+}
+
+.Sadong .SAB {
+    background-color: #fb8dff;
+    width: 50%;
+    float: left;
+}
+

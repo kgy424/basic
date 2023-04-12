@@ -1,0 +1,60 @@
+@charset "UFT-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.mom1 {
+    border: 3px solid red;
+    margin: 20px;
+
+}
+
+.mom1 .kgy1 {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.mom2 {
+    border: 3px solid orange;
+    margin: 20px;
+}
+
+.mom2 .kgy2 {
+    float: left;
+    width: 25%;
+   
+}
+
+.mom3 {
+    border: 3px solid green;
+    margin: 20px;
+}
+
+
+.mom3 .kgy3 {
+    float: left;
+    
+    text-align: center;
+}
+
+.mom3 .kgy3 img {width: 100%;}
+
+.mom4 {
+    border: 3px solid blue;
+    margin: 20px;
+}
+
+.mom4 .kgy4 {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
