@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>사용자로부터 입력 받기</h1>
+    <div class="box1">
+        <form action="#">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="my-name">
+            <br><br>
+            <label for="age">나이</label>
+            <input type="number" id="age" name="my-age">
+            <br><br>
+            <button for="submit">눌러봥</button>
+            <button type="reaet">이거는눌리면아ㄴ됨</button>
+        </form>
+    </div><!-- //box1 -->
+
+    <div class="box2">
+        <form action="#">
+            <fieldset>
+                <legend>Cap</legend>
+                <label for="name1">이름</label>
+                <input type="text" id="name1" name="name-1">
+                <label for="age1"> 나이</label>
+                <input type="number" id="age1" name="age-1">
+                <input type="submit" value="누르라고">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Sub-Cap</legend>
+                <label for="name2">이름</label>
+                <input type="text" id="name2" name="name-2">
+                <label for="age2">나이</label>
+                <input type="number" id="age2" name="age-2">
+                <input type="submit" value="고생하자">
+            </fieldset>
+        </form>
+    </div><!-- //box2 -->
+
+    <div class="box3">
+        <form action="#">
+            <label for="txt">text</label>
+            <input type="txt" id="txt" placeholder="5자 이하" maxlength="5">
+            <br><br>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="4자 이상" minlength="4" required><!-- required=필수 내용으로 강조하는 부분 -->
+            <input type="submit" value="제출해봣">
+            <br><br>
+            <label for="src">search</label>
+            <input type="search" id="src">
+            <input type="submit" value="ㄱ검색ㄱ">
+        </form>
+    </div><!-- //box3 -->
+
+    <div class="box4">
+        <form action="#">
+            <label for="num">number</label>
+            <input type="number" id="num" min="0" max="10">
+            <br><br>
+            <label for="rg">Range</label>
+            <input type="range" min="0" max="100" step="20">
+            <br><br>
+            <label for="dt">date</label>
+            <input type="date" min="2020-01-01" max="2030-12-31">
+        </form>
+    </div><!-- //box4 -->
+
+    <div class="box5">
+        <h3 style="padding-bottom: 20px;">MEMO</h3>
+        <label for="mg">하고 싶은 말이 있나요?</label><br>
+        <textarea name="msg" id="mg" cols="100%" rows="10"></textarea>
+    </div><!-- //box5 -->
+
+    <div class="box6">
+        <h3>select, option tag</h3>
+        <form action="#">
+            <label for="lang">language</label>
+            <select name="land" id="lang">
+                <option value="">--언어 선택--</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javaScriot">JAVASCRIPT</option>
+                <option value="React">REACT</option>
+            </select>
+            <br><br>
+
+            <h3>OPTGROUP tag</h3>
+            <label for="shopping">Shopping List</label>
+            <select name="shopping" id="shopping">
+                <optgroup label="FRUIT">
+                    <option value="f_apl">사과</option>
+                    <option value="f_grp">포도</option>
+                    <option value="f_pin">파인애플</option>
+                    <option value="f_peh">복숭아</option>
+                </optgroup>
+                <optgroup label="VEGTABLE">
+                    <option value="v_car">당근</option>
+                    <option value="v_cum">오이</option>
+                    <option value="v_cbg">양배추</option>
+                    <option value="v_tma">토마토</option>
+                    <option value="v_egp">가지</option>
+                </optgroup>
+                <optgroup label="MEAT">
+                    <option value="m_bef">소고기</option>
+                    <option value="m_fok">돼지고기</option>
+                    <option value="m_chi">닭고기</option>
+                    <option value="m_she">양고기</option>
+                </optgroup>
+            </select>
+        </form>
+    </div><!-- //box6 -->
+
+    <div class="box7">
+        <form action="#">
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="Gender">MAIL
+                <input type="radio" name="Gender" checked>FEMAIL
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Selet your country</legend>
+                <input type="radio" name="area">SEOUL
+                <input type="radio" name="area" checked>BUSAN
+                <input type="radio" name="area">INCHEON
+                <input type="radio" name="area">DAEJEON
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Select all your fav fruit</legend>
+                <input type="checkbox" name="fruit">APPLE
+                <input type="checkbox" name="fruit">BANNA
+                <input type="checkbox" name="fruit">LEMON
+                <input type="checkbox" name="fruit">STRAWBERRY
+                <input type="checkbox" name="fruit">BLUEBERRY
+            </fieldset>
+        </form>
+    </div><!-- //box7 -->
+</body>
+
+</html>

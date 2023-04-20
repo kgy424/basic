@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0 20vw;
+    /* "vw" :viewport(html이 실행되는 화면)이 기준
+    기본=100vw */
+}
+
+.box1 {
+    margin-top: 30px;
+    border-bottom: 3px solid #007bce;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 3vW;
+}
+
+.box2 form fieldset,
+.box7 form fieldset {
+    padding: 20px;
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+    margin-top: 30px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+
+}

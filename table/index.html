@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>표 만들기</h1>
+        <p>html에서 표를 구현할 때 사용하는 태그</p>
+        <ul>
+            <li>tr(table row):행</li>
+            <li>td(table data):열</li>
+            <li>th(table heading):행, 열의 제목(볼드체, 가운데 정렬)</li>
+            <li>속성 colspan="2":2칸의 열 병합</li>
+            <li>속성 rowspan="3"3칸의 행 병합</li>
+            <li>colspan, rowspan 적용 후에 원래 있던 열과 행은 주석처리나 삭제 해 줘야함.</li>
+        </ul>
+        <div class="table1">
+            <h2>table1</h2>
+            <table>
+                <caption>표 제목(필수는 아님)</caption>
+                <!-- 이제부터는 필수로 넣어야하는 내용 -->
+                <tr>
+                    <!-- 행 만들기 -->
+                    <th>제목1</th><!-- 제목 열 만들기 -->
+                    <th>제목2</th><!-- 제목 열 만들기 -->
+                    <th>제목3</th><!-- 제목 열 만들기 -->
+                </tr><!-- //행 만들기 -->
+                <tr>
+                    <!-- 행 만들기 -->
+                    <td>1행 1열</td><!-- 열 만들기 -->
+                    <td>1행 2열</td><!-- 열 만들기 -->
+                    <td>1행 3열</td><!-- 열 만들기 -->
+                </tr><!-- //행 만들기 -->
+                <tr>
+                    <td>2행 1열</td>
+                    <td>2행 2열</td>
+                    <td>2행 3열</td>
+                </tr>
+                <tr>
+                    <td>3행 1열</td>
+                    <td>3행 2열</td>
+                    <td>3행 3열</td>
+                </tr>
+            </table>
+        </div><!-- //table1 -->
+        <div class="table1-2">
+            <h2>table 연습하기</h2>
+            <table>
+                <tr>
+                    <!-- 행 만들기 -->
+                    <th>
+                        NIKE
+                    </th>
+                    <th>
+                        ADIDAS
+                    </th>
+                    <th>
+                        PUMA
+                    </th>
+                    <th>
+                        FILA
+                    </th>
+                </tr><!-- //행 만들기 -->
+                <tr>
+                    <!-- 행 만들기 -->
+                    <td>
+                        <!-- 열 만들기 -->
+                        AMERICA
+                    </td>
+                    <td>
+                        GERMENY
+                    </td>
+                    <td>
+                        GERMENY
+                    </td>
+                    <td>
+                        R.KOREA
+                    </td>
+                </tr><!-- //행 만들기 -->
+                <tr>
+                    <td>필 나이트, 빌 바우만</td>
+                    <td>아돌프 다슬러</td>
+                    <td>루돌프 다슬러</td>
+                    <td>잔세베로 휠라 (휠라 형제)</td>
+            </table>
+        </div><!-- //table1-2 -->
+        <div class="table2">
+            <h2>Table2</h2>
+            <table>
+                <tr>
+                    <!-- 행 만들기 -->
+                    <th>제목1</th><!-- 제목 열 만들기 -->
+                    <th>제목2</th>
+                    <th>제목3</th>
+                </tr>
+                <tr>
+                    <!-- 행 만들기 -->
+                    <td>일머리 문해력</td><!-- 내용 1열 만들기 -->
+                    <td>더 좋은 삶을 위한 철학</td>
+                    <td>내면 소통</td>
+                </tr>
+                <tr>
+                    <td>송숙희 저자</td>
+                    <td>마이클 슈어 저자 / 염지선 번역</td>
+                    <td>김주환 저자</td>
+                </tr>
+                <tr>
+                    <td>교보문고</td>
+                    <td>김영사</td>
+                    <td>인플루엔셜</td>
+                </tr>
+            </table>
+        </div><!-- //table2 -->
+        <div class="table3">
+            <h2>table3</h2>
+            <table>
+                <tr>
+                    <th colspan="2">title1</th>
+                    <!-- <th>title2</th> -->
+                    <th>title3</th>
+                    <th>title4</th>
+                </tr>
+                <tr>
+                    <td>1row 1column</td>
+                    <td colspan="2">1row 2column</td>
+                    <!-- <td>1row 3column</td> -->
+                    <td rowspan="3">1row 4column</td>
+                </tr>
+                <tr>
+                    <td>2row 1column</td>
+                    <td rowspan="2">2row 2column</td>
+                    <td>2row 3column</td>
+                    <!-- <td>2row 4column</td> -->
+                </tr>
+                <tr>
+                    <td>3row 1column</td>
+                    <!-- <td>3row 2column</td> -->
+                    <td>3row 3column</td>
+                    <!-- <td>3row 4column</td> -->
+                </tr>
+            </table>
+        </div><!-- //table3 -->
+        <div class="table4">
+            <h2>table4</h2>
+            <table>
+                <tr>
+                    <th colspan="3">제목1</th>
+                    <!-- <th>제목2</th> -->
+                    <!-- <th>제목3</th> -->
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">1행 1열</td>
+                    <!-- <td>1행 2열</td> -->
+                    <td>1행 3열</td>
+                </tr>
+                <tr>
+                    <!-- <td>2행 1열</td> -->
+                    <!-- <td>2행 2열</td> -->
+                    <td>2행 3열</td>
+                </tr>
+                <tr>
+                    <td>3행 1열</td>
+                    <td>3행 2열</td>
+                    <td>3행 3열</td>
+                </tr>
+            </table>
+        </div><!-- //table4 -->
+        <div class="table5">
+            <h2>table5</h2>
+            <table>
+                <tr>
+                    <th>Title1</th>
+                    <td>1row 1column</td>
+                    <td>2row 1column</td>
+                    <td>3row 1column</td>
+                    <td>4row 1column</td>
+                </tr>
+                <tr>
+                    <th>Title2</th>
+                    <td>1row 2column</td>
+                    <td>2row 2column</td>
+                    <td>3row 2column</td>
+                    <td>4row 2column</td>
+                </tr>
+                <tr>
+                    <th>Title3</th>
+                    <td>1row 3column</td>
+                    <td>2row 3column</td>
+                    <td>3row 3column</td>
+                    <td>4row 3column</td>
+                </tr>
+            </table>
+        </div><!-- /table5 -->
+        <div class="table6">
+            <h2>table6</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>col-title1</th>
+                    <th>col-title2</th>
+                    <th>col-title3</th>
+                </tr>
+                <tr>
+                    <th>row-title1</th>
+                    <td>1row 1column</td>
+                    <td>2row 1column</td>
+                    <td>3row 1column</td>
+                </tr>
+                <tr>
+                    <th>row-title2</th>
+                    <td>1row 2column</td>
+                    <td>2row 2column</td>
+                    <td>3row 2column</td>
+                </tr>
+            </table>
+        </div><!-- //table6 -->
+        <div class="table7">
+            <h2>table7</h2>
+            <table>
+                <tr>
+                    <th>title1</th>
+                    <th>title2</th>
+                    <th>title3</th>
+                    <th>title4</th>
+                    <th>title5</th>
+                    <th>title6</th>
+                </tr>
+                <tr>
+                    <td>1row 1column</td>
+                    <td>1row 2column</td>
+                    <td>1row 3column</td>
+                    <td>1row 4column</td>
+                    <td>1row 5column</td>
+                    <td>1row 6column</td>
+                </tr>
+                <tr>
+                    <td>2row 1column</td>
+                    <td>2row 2column</td>
+                    <td>2row 3column</td>
+                    <td>2row 4column</td>
+                    <td>2row 5column</td>
+                    <td>2row 6column</td>
+                </tr>
+                <tr>
+                    <td>3row 1column</td>
+                    <td>3row 2column</td>
+                    <td>3row 3column</td>
+                    <td>3row 4column</td>
+                    <td>3row 5column</td>
+                    <td>3row 6column</td>
+                </tr>
+                <tr>
+                    <td>4row 1column</td>
+                    <td>4row 2column</td>
+                    <td>4row 3column</td>
+                    <td>4row 4column</td>
+                    <td>4row 5column</td>
+                    <td>4row 6column</td>
+                </tr>
+                <tr>
+                    <td>5row 1column</td>
+                    <td>5row 2column</td>
+                    <td>5row 3column</td>
+                    <td>5row 4column</td>
+                    <td>5row 5column</td>
+                    <td>5row 6column</td>
+                </tr>
+                <tr>
+                    <td>6row 1column</td>
+                    <td>6row 2column</td>
+                    <td>6row 3column</td>
+                    <td>6row 4column</td>
+                    <td>6row 5column</td>
+                    <td>6row 6column</td>
+                </tr>
+            </table>
+        </div><!-- //table7 -->
+        <div class="table8">
+            <h2>table8</h2>
+            <table>
+                <tr>
+                    <th>title1</th>
+                    <th>title2</th>
+                    <th>title3</th>
+                    <th>title4</th>
+                    <th>title5</th>
+                    <th>title6</th>
+                </tr>
+                <tr>
+                    <td>1row 1column</td>
+                    <td>1row 2column</td>
+                    <td>1row 3column</td>
+                    <td>1row 4column</td>
+                    <td>1row 5column</td>
+                    <td>1row 6column</td>
+                </tr>
+                <tr>
+                    <td>2row 1column</td>
+                    <td>2row 2column</td>
+                    <td>2row 3column</td>
+                    <td>2row 4column</td>
+                    <td>2row 5column</td>
+                    <td>2row 6column</td>
+                </tr>
+                <tr>
+                    <td>3row 1column</td>
+                    <td>3row 2column</td>
+                    <td>3row 3column</td>
+                    <td>3row 4column</td>
+                    <td>3row 5column</td>
+                    <td>3row 6column</td>
+                </tr>
+                <tr>
+                    <td>4row 1column</td>
+                    <td>4row 2column</td>
+                    <td>4row 3column</td>
+                    <td>4row 4column</td>
+                    <td>4row 5column</td>
+                    <td>4row 6column</td>
+                </tr>
+                <tr>
+                    <td>5row 1column</td>
+                    <td>5row 2column</td>
+                    <td>5row 3column</td>
+                    <td>5row 4column</td>
+                    <td>5row 5column</td>
+                    <td>5row 6column</td>
+                </tr>
+                <tr>
+                    <td>6row 1column</td>
+                    <td>6row 2column</td>
+                    <td>6row 3column</td>
+                    <td>6row 4column</td>
+                    <td>6row 5column</td>
+                    <td>6row 6column</td>
+                </tr>
+            </table>
+        </div><!-- //table8 -->
+        <div class="table9">
+            <h2>table9</h2>
+            <table>
+                <colgroup>
+                <col span="2">
+                <col span="2">
+                <col span="2">
+                </colgroup>
+                <tr>
+                    <th>title1</th>
+                    <th>title2</th>
+                    <th>title3</th>
+                    <th>title4</th>
+                    <th>title5</th>
+                    <th>title6</th>
+                </tr>
+                <tr>
+                    <td>1row 1column</td>
+                    <td>1row 2column</td>
+                    <td>1row 3column</td>
+                    <td>1row 4column</td>
+                    <td>1row 5column</td>
+                    <td>1row 6column</td>
+                </tr>
+                <tr>
+                    <td>2row 1column</td>
+                    <td>2row 2column</td>
+                    <td>2row 3column</td>
+                    <td>2row 4column</td>
+                    <td>2row 5column</td>
+                    <td>2row 6column</td>
+                </tr>
+                <tr>
+                    <td>3row 1column</td>
+                    <td>3row 2column</td>
+                    <td>3row 3column</td>
+                    <td>3row 4column</td>
+                    <td>3row 5column</td>
+                    <td>3row 6column</td>
+                </tr>
+                <tr>
+                    <td>4row 1column</td>
+                    <td>4row 2column</td>
+                    <td>4row 3column</td>
+                    <td>4row 4column</td>
+                    <td>4row 5column</td>
+                    <td>4row 6column</td>
+                </tr>
+                <tr>
+                    <td>5row 1column</td>
+                    <td>5row 2column</td>
+                    <td>5row 3column</td>
+                    <td>5row 4column</td>
+                    <td>5row 5column</td>
+                    <td>5row 6column</td>
+                </tr>
+                <tr>
+                    <td>6row 1column</td>
+                    <td>6row 2column</td>
+                    <td>6row 3column</td>
+                    <td>6row 4column</td>
+                    <td>6row 5column</td>
+                    <td>6row 6column</td>
+                </tr>
+            </table>
+        </div><!-- //table9 -->
+    </div>
+</body>
+
+</html>
