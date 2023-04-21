@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one_ign+div {/* 바로 밑 동생 */
+            background-color: powderblue;
+        }
+        .one_sign~div{/* 밑에 있는 동생들 */
+            text-decoration: underline;
+        }
+        /* .warp div:not(:last-child){막내 자식은 뺀다//괄호 안에 내용을 제외한다.} */
+        .warp div:not(:last-child){color: blueviolet;}
+        /* .warp div:not([class="sign"])=>클래스 명이 사인인거 말고 나머지 다 */
+        .warp div:not([class="sign"]){
+            text-align: center;
+        }
+        /* //////////////////////////////// */
+        .warp div[class^="sign"]{/* 클래스 명이 사인으로 시작하면~@@해라 */
+            border: 2px solid red;
+        }
+        .warp div[class$="sign"]{/* 클래스 명 중에 사인으로 끝나면~~ */
+            border: 2px solid blue;
+        }
+        .warp div[class*="sign"]{/* 클래스 명에 sign이 들어가면 */
+            border: 2px solid green;
+        }
+        .warp div[class~="sign"]{/*클래스 명에 사인이 온전히 들어있으면~ */
+            border: 2px solid yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="warp">
+        <div class="sign">sign</div>
+        <div class="sign_one">sign_one</div>
+        <div class="one_sign">one_sign</div>
+        <div class="onesignone">onesignone</div>
+        <div class="two_sign">two_sign</div>
+    </div>
+</body>
+
+</html>
